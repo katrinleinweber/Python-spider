@@ -110,7 +110,7 @@ def royal(url):
     citation_doi = bsop.find('meta', {'name':'citation_doi'}).attrs['content']
     PB = bsop.find('meta', {'name':'DC.publisher'}).attrs['content']
     M3 = citation_doi
-    citation_url = 'http://dx.doi.org/' + citation_doi
+    citation_url = 'https://doi.org/' + citation_doi
     citation_abstract = bsop.find('meta', {'name':'citation_abstract'}).attrs['content'].strip()
     SN = bsop.find('div', {'class':'article-nav__issue autopad--h'}).find('a').attrs['href'].split('=')[-1]
 

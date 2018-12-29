@@ -61,7 +61,7 @@ def royal(article_urls):
         except:
             pass
         try:
-            citation_url = 'http://dx.doi.org/' + citation_doi
+            citation_url = 'https://doi.org/' + citation_doi
         except:
             pass
         try:
